@@ -1,0 +1,63 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-board {
+  height: 90vmin;
+  width: 90vmin;
+  background: linear-gradient(rgb(19, 17, 15), rgb(187, 127, 89), rgb(24, 16, 1));
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  justify-items: center;
+}
+
+.score {
+  background-color: rgb(212, 212, 17);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.snakeSegment {
+  background: #219d00;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.snakeHead {
+  background: url(snakeHead.png);
+  width: 150%;
+  height: 150%;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-25%, -25%);
+}
+
+.apple {
+  background: url(rat.png.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
